@@ -4,24 +4,23 @@ import awc.personaldev.designpatterns.strategy.rpg.character.DeathKnight;
 import awc.personaldev.designpatterns.strategy.rpg.character.Dwarf;
 import awc.personaldev.designpatterns.strategy.rpg.character.Murlock;
 import awc.personaldev.designpatterns.strategy.rpg.character.RpgCharacter;
-import awc.personaldev.designpatterns.strategy.rpg.weapon.AxeBehaviour;
 import awc.personaldev.designpatterns.strategy.rpg.weapon.MeleeBehaviour;
-import awc.personaldev.designpatterns.strategy.rpg.weapon.SwordBehaviour;
 
 public class Main {
     public static void main(String[] args) {
         RpgCharacter arthas = new DeathKnight();
-        arthas.setWeaponBehaviour(new SwordBehaviour());
         arthas.printQuote();
         arthas.attack();
 
         RpgCharacter cruelFin = new Murlock();
-        cruelFin.setWeaponBehaviour(new MeleeBehaviour());
         cruelFin.printQuote();
         cruelFin.attack();
 
+        System.out.println("arthas disarmed");
+        arthas.setWeaponBehaviour(new MeleeBehaviour());
+        arthas.attack();
+
         RpgCharacter brann = new Dwarf();
-        brann.setWeaponBehaviour(new AxeBehaviour());
         brann.printQuote();
         brann.attack();
     }

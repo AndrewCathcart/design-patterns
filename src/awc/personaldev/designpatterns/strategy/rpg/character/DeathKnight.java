@@ -1,5 +1,7 @@
 package awc.personaldev.designpatterns.strategy.rpg.character;
 
+import awc.personaldev.designpatterns.strategy.rpg.weapon.SwordBehaviour;
+
 import java.util.Random;
 
 public class DeathKnight extends RpgCharacter {
@@ -12,6 +14,8 @@ public class DeathKnight extends RpgCharacter {
     };
 
     public DeathKnight() {
+        weaponBehaviour = new SwordBehaviour();
+        playable = true;
     }
 
     @Override
