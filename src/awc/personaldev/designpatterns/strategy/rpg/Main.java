@@ -4,9 +4,9 @@ import awc.personaldev.designpatterns.strategy.rpg.character.DeathKnight;
 import awc.personaldev.designpatterns.strategy.rpg.character.Dwarf;
 import awc.personaldev.designpatterns.strategy.rpg.character.Murlock;
 import awc.personaldev.designpatterns.strategy.rpg.character.RpgCharacter;
-import awc.personaldev.designpatterns.strategy.rpg.weapons.AxeBehaviour;
-import awc.personaldev.designpatterns.strategy.rpg.weapons.MeleeBehaviour;
-import awc.personaldev.designpatterns.strategy.rpg.weapons.SwordBehaviour;
+import awc.personaldev.designpatterns.strategy.rpg.weapon.AxeBehaviour;
+import awc.personaldev.designpatterns.strategy.rpg.weapon.MeleeBehaviour;
+import awc.personaldev.designpatterns.strategy.rpg.weapon.SwordBehaviour;
 
 public class Main {
     public static void main(String[] args) {

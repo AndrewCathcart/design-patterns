@@ -1,6 +1,6 @@
 package awc.personaldev.designpatterns.strategy.rpg.character;
 
-import awc.personaldev.designpatterns.strategy.rpg.weapons.WeaponBehaviour;
+import awc.personaldev.designpatterns.strategy.rpg.weapon.WeaponBehaviour;
 
 public abstract class RpgCharacter {
     WeaponBehaviour weaponBehaviour;

@@ -1,4 +1,4 @@
-package awc.personaldev.designpatterns.strategy.rpg.weapons;
+package awc.personaldev.designpatterns.strategy.rpg.weapon;
 
 public class AxeBehaviour implements WeaponBehaviour {
     @Override
